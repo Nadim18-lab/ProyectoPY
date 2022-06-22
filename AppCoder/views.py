@@ -2,28 +2,28 @@ from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
 
-def index(request):
+def index(self):
     plantilla = loader.get_template("index.html")
     
     documento = plantilla.render()
     return HttpResponse(documento)
 
-def receta(request):
+def receta(self):
     
     return HttpResponse('reloco')
 
 
-def agregar(request):
+def agregar(self):
     
     return HttpResponse('reloco')
 
 
-def editar(request):
+def editar(self):
     
     return HttpResponse('reloco')
 
 
-def login(request):
+def login(self):
     
     return HttpResponse('reloco')
 
